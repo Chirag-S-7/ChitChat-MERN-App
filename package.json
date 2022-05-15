@@ -1,0 +1,30 @@
+{
+  "name": "chitchat",
+  "version": "1.0.0",
+  "engines": {
+    "node": "16.x",
+    "npm": "6.x"
+  },
+  "description": "This is a web app",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon Backend/server.js",
+    "heroku-postbuild": "cd frontend && npm install --only=dev && npm install && npm run build"
+  },
+  "author": "Chirag Shah",
+  "license": "ISC",
+  "dependencies": {
+    "@chakra-ui/react": "^1.8.8",
+    "@emotion/react": "^11.9.0",
+    "@emotion/styled": "^11.8.1",
+    "bcryptjs": "^2.4.3",
+    "dotenv": "^16.0.0",
+    "express": "^4.17.3",
+    "express-async-handler": "^1.2.0",
+    "framer-motion": "^6.2.9",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^6.2.9",
+    "nodemon": "^2.0.15",
+    "socket.io": "^4.5.0"
+  }
+}
